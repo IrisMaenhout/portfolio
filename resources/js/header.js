@@ -1,7 +1,6 @@
-let header = document.querySelector('header');
+const header = document.querySelector('header');
 const menuBtn = document.querySelector('.fa-bars');
-
-let nav = document.querySelector('nav');
+const nav = document.querySelector('nav');
 
 menuBtn.addEventListener('click', ()=>{
     nav.classList.toggle('hide');
