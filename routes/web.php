@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ShowPdfController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// });
+
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/cv', [ShowPdfController::class, "downloadPdf"]);
+// Route::get('/cv', [ShowPdfController::class, "showPdf"]);
+
+Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
