@@ -7,6 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $_ENV["APP_NAME"] }}</title>
 
+    {{-- Favicon --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon-16x16.png') }}">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
+
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
@@ -24,7 +31,7 @@
 
         <div class="flex">
             <a href="/">
-                <h2 class="logo">{{ $_ENV["APP_NAME"]}}</h2>
+                <h2 class="logo">IM</h2>
             </a>
             <i class="fa-solid fa-bars"></i>
         </div>

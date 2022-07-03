@@ -8,12 +8,12 @@ class ShowPdfController extends Controller
 {
     public function showPdf()
     {
-        // $pathToFile = public_path(). "/Iris_Maenhout_cv.pdf";
-        // $headers = ['Content-Type: application/pdf'];
+        $pathToFile = public_path(). "/Iris_Maenhout_cv.pdf";
+        $headers = ['Content-Type: application/pdf'];
 
-        // return response()->file($pathToFile);
+        return response()->file($pathToFile);
 
-        // return response()->file($pathToFile, $headers);
+        return response()->file($pathToFile, $headers);
     }
 
 

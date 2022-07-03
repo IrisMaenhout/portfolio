@@ -15,6 +15,7 @@
         </div>
 
         <form action="{{route('contact.send')}}" method="post">
+            @csrf
             <div class="flex">
                 <div>
                     <label for="firstname">Voornaam</label>
@@ -35,8 +36,8 @@
                 </div>
 
                 <div>
-                    <label for="phone-nr">Telefoonnummer (optioneel)</label>
-                    <input type="tel" name="phone-nr" id="phone-nr">
+                    <label for="phone_nr">Telefoonnummer (optioneel)</label>
+                    <input type="tel" name="phone_nr" id="phone_nr">
                 </div>
 
 

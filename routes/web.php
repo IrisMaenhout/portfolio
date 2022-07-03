@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ShowPdfController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,3 +28,4 @@ Route::get('/cv', [ShowPdfController::class, "downloadPdf"]);
 // Route::get('/cv', [ShowPdfController::class, "showPdf"]);
 
 Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
+// Route::get('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');

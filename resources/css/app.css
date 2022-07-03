@@ -7,6 +7,7 @@
 
     --white: white;
     --light-grey: #8d8d8d;
+    --dark-grey: #404040;
     --extra-light-pink: #FFFDFD;
     --light-pink: #ffedece0;
     --dark-orange: #CA6046;
@@ -24,6 +25,7 @@ body{
 h1,h2,h3,h4,h5,h6{
     margin-bottom: 1em;
     text-align: center;
+    color: var(--dark-grey);
 }
 
 p, li, label{
@@ -43,6 +45,7 @@ p, li, label{
 .logo{
     font-family: 'Yellowtail', cursive;
     margin: 0;
+    color: var(--dark-orange);
 }
 
 header{
@@ -189,6 +192,7 @@ nav .icons{
     min-width: 150px;
     text-align: center;
     border: 1px solid var(--purple);
+    cursor: pointer;
 }
 
 .secundary-btn{
@@ -200,6 +204,7 @@ nav .icons{
     border-radius: 10px;
     min-width: 150px;
     text-align: center;
+    cursor: pointer;
 }
 
 
@@ -264,7 +269,7 @@ nav .icons{
     margin-top: 4em;
     background-color: var(--white);
     border-radius: 20px;
-    box-shadow: 5px 5px 14px 0px rgba(168, 168, 168, 0.18);;
+    box-shadow: 5px 5px 14px 0px rgba(168, 168, 168, 0.18);
     padding: 0.5em;
 }
 
@@ -286,6 +291,9 @@ nav .icons{
     color: var(--white);
 }
 
+.contact-info h3{
+    color: var(--white);
+}
 .contact-info p{
     margin-bottom: 3em;
     color: var(--white);
