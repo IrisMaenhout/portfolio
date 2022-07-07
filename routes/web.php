@@ -29,3 +29,7 @@ Route::get('/cv', [ShowPdfController::class, "downloadPdf"]);
 
 Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
 // Route::get('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
+
+Route::get('/project', function () {
+    return view('project');
+});

@@ -11,15 +11,20 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon-16x16.png') }}">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="{{ asset('images/site.webmanifest') }}">
     <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
-    <!-- Scripts -->
+    @yield('styles')
+
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/f677a13f9c.js" crossorigin="anonymous"></script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
 
 </head>
 
@@ -39,9 +44,9 @@
 
         <nav class="navigation hide">
             <ul>
-                <li><a href="#personal-info">Over mezelf</a></li>
-                <li><a href="#projects">Projecten</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/#personal-info">Over mezelf</a></li>
+                <li><a href="/#projects">Projecten</a></li>
+                <li><a href="/#contact">Contact</a></li>
             </ul>
 
             <ul class="icons">

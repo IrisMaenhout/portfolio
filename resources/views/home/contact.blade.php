@@ -43,7 +43,7 @@
 
             </div>
 
-            <label for="subject">onderwerp</label>
+            <label for="subject">Onderwerp</label>
             <input type="text" name="subject" id="subject" required>
 
             <label for="message">Bericht</label>
