@@ -12,6 +12,7 @@
     --soft-orange-red: #DA7F6E;
     --soft-red: #D75B52;
     --pink: #DA756E;
+    --light-pink: #F4D0C5;
     --purple: #742E64;
 
     --mid-red-pink: #BF5353;
@@ -119,12 +120,27 @@ body .content{
     text-align: left;
 }
 
-.info-sidebar .project-img{
+.info-sidebar .project-img, .info-sidebar .process-img{
     width: 100%;
-    height: 12rem;
+    height: 18rem;
     background-color: #CA6046;
     border-radius: 20px;
     position: relative;
+}
+
+.info-sidebar .project-img .fa-solid{
+    font-size: 21px;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    color: var(--extra-light-pink);
+}
+.info-sidebar .project-img .fa-chevron-left{
+    left: 3%;
+}
+
+.info-sidebar .project-img .fa-chevron-right{
+    right: 3%;
 }
 
 .info-sidebar .technologies-tags{
@@ -162,6 +178,71 @@ body .content{
     to {
         transform: translateX(-100%);
     }
+}
+
+.project-btns{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4em;
+}
+
+.project-btns a{
+    background-color: var(--light-pink);
+    text-decoration: none;
+    color: var(--pink);
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 100%;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.project-btns a:hover{
+    background-color: var(--mid-red-pink);
+    color: var(--extra-light-pink);
+}
+
+.project-btns .fi{
+    padding-top: 0.25em;
+}
+
+.process h3{
+    text-align: left;
+    margin-top: 4em;
+}
+
+.long-text p+p{
+    margin-top: 1em;
+}
+
+.long-text p:last-child{
+    margin-bottom: 4em;
+}
+
+.info-sidebar h2{
+    font-size: 32px;
+    color: var(--dark-orange);
+    margin-bottom: 1em;
+    margin-top: 4em;
+}
+
+.project-main-btns{
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.project-main-btns a{
+    display: block;
 }
 
 
@@ -206,15 +287,20 @@ body .content{
     /* _________________________ Extra info ________________________*/
 
     .info-sidebar{
-    position: absolute;
-    top: 4em;
-    right: -100vw;
-    width: 70%;
-    overflow-x: hidden;
-    box-shadow: -5px 0px 19px 1px rgba(56,56,56,0.33);
-    transition: 0.5s;
-    left: auto;
-    /* right: 0; */
+        padding-top: 6em;
+        position: absolute;
+        top: 4em;
+        right: -100vw;
+        width: 70%;
+        overflow-x: hidden;
+        box-shadow: -5px 0px 19px 1px rgba(56,56,56,0.33);
+        transition: 0.5s;
+        left: auto;
+        /* right: 0; */
+    }
+
+    .project-main-btns{
+        width: 80%;
     }
 
 }
