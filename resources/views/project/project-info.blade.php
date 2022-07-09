@@ -37,7 +37,7 @@
 
     <div class="process-img"></div>
 
-    <h2>Vond je dit een interessant project?</h2>
+    <h2>Vind je dit een interessant project?</h2>
     <div class="project-main-btns">
         <a class="secundary-btn" href="/#projects">Bekijk meer projecten</a>
         <a class="primary-btn" href="/#contact">Contacteer mij</a>
