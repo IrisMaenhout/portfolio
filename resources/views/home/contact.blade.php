@@ -10,7 +10,6 @@
             <ul>
                 <li><i class="fa-solid fa-phone"></i> <a href="tel:0489 03 44 93">0489 03 44 93</a></li>
                 <li><i class="fa-solid fa-envelope"></i> <a href="mailto:irismaenhout@gmail.com">irismaenhout@gmail.com</a></li>
-                <li><i class="fa-solid fa-location-dot"></i> Bauterstraat 29, 9870 Zulte</li>
             </ul>
         </div>
 
