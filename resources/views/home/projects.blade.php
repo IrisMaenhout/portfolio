@@ -2,11 +2,17 @@
     <h2>Projects</h2>
 
     <div class="projects">
-        <a href="" class="project"></a>
-        <a href="" class="project"></a>
-        <a href="" class="project"></a>
-        <a href="" class="project"></a>
-        <a href="" class="project"></a>
-        <a href="" class="project"></a>
+        @foreach ($projects as $project)
+
+            @php
+                $url = str_replace(" ","_", strtolower($project->name));
+            @endphp
+
+            <a href="project/{{$url}}" class="project">
+                <h3>{{$project->name}}</h3>
+                <img src="{{asset('/images/mockups/' . $url . '.png')}}" alt="">
+            </a>
+        @endforeach
+
     </div>
 </div>

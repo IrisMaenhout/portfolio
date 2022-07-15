@@ -21,3 +21,4 @@ mix.postCss('resources/css/app.css', 'public/css');
 mix.postCss('resources/css/project-page.css', 'public/css');
 mix.js('resources/js/header.js', 'public/js');
 mix.js('resources/js/project.js', 'public/js');
+mix.js('resources/js/slideshow.js', 'public/js');

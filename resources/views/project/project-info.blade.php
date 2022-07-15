@@ -1,41 +1,82 @@
 <div class="info-sidebar info">
-    <p class="domain">Design & development</p>
-    <h1>Samen uit, samen thuis</h1>
+    <p class="domain">{{$project->category}}</p>
+    <h1>{{$project->name}}</h1>
 
-    <p class="short-description long-text">Applicatie om evenementen te plannen en zorgt er voor dat gebruikers zich veilig voelen tijdens hun verplaatsing naar het evenement.</p>
+    <div class="long-text">
+        @if (str_contains($project->description, '</p>'))
+            {!! $project->description !!}
+        @else
+            <p>{{$project->description}}</p>
+        @endif
+
+    </div>
+
+    {{-- <p class="short-description long-text">{{$project->description}}</p> --}}
 
     <div class="project-img">
-        <i class="fa-solid fa-chevron-left"></i>
-        <i class="fa-solid fa-chevron-right"></i>
+        @foreach ($result_images as $result_img)
+        @if (str_contains($result_img->img_path, '.mp4'))
+            <div class="mySlides fade">
+                <video controls>
+                    <source src="{{asset($result_img->img_path)}}" type="video/mp4">
+                </video>
+            </div>
+        @else
+            <div class="mySlides fade">
+                <img src="{{asset($result_img->img_path)}}" alt="{{$project->name}}" >
+            </div>
+        @endif
+
+        @endforeach
+
+        <i class="fa-solid fa-chevron-left prev"></i>
+        <i class="fa-solid fa-chevron-right next"></i>
 
         <div class="technologies-tags">
             <ul>
-                <li>#HTML</li>
-                <li>#CSS</li>
-                <li>#JS</li>
-                <li>#Firebase</li>
-                <li>#Mapbox</li>
+                @foreach ($technologies as $tech)
+                    <li>#{{$tech[0]->name}}</li>
+                @endforeach
             </ul>
         </div>
     </div>
 
 
     <div class="project-btns">
-        <a href=""><i class="fi fi-rr-browser"></i></a>
-        <a href=""><i class="fa-brands fa-github"></i></a>
-        <a href="https://xd.adobe.com/view/f6a6a454-0fe7-4f00-8626-9669e841504d-a3f5/screen/951eb119-9f9b-4da1-b8e1-e646a5967be4/?hints=off" target="_blank">
-            <i class="fi fi-brands-xd"></i>
-        </a>
+        @if ($project->url_website != '')
+            <a href="{{$project->url_website}}" target="_blank"><i class="fi fi-rr-browser"></i></a>
+        @endif
+
+        @if ($project->url_github != '')
+            <a href="{{$project->url_github}}" target="_blank"><i class="fa-brands fa-github"></i></a>
+        @endif
+
+        @if ($project->url_design != '')
+            <a href="{{$project->url_design}}" target="_blank"><i class="fi fi-brands-xd"></i></a>
+        @endif
+
     </div>
 
     <div class="process long-text">
         <h3>Process</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit consectetur tellus sit amet finibus. Curabitur velit turpis, congue non aliquet eu, commodo ac justo. Nullam ac gravida massa. Maecenas sit amet lacus placerat, auctor dolor id, vehicula nulla. Suspendisse ac felis rutrum, fringilla erat ut, pharetra purus. Cras risus dolor, vulputate ac malesuada ut, pharetra sed justo. Duis id interdum enim, sit amet tristique metus. Aliquam a accumsan magna, nec placerat purus.</p>
 
-        <p>Morbi volutpat risus ut augue rhoncus egestas. Phasellus varius finibus viverra. Duis condimentum massa a imperdiet tincidunt. Fusce rhoncus, diam nec rhoncus facilisis, enim erat laoreet enim, sed ultrices augue nulla nec justo. Suspendisse imperdiet blandit ante. Vivamus faucibus erat accumsan, ultricies elit vitae, finibus lacus. Donec non congue diam. Pellentesque scelerisque massa sit amet sapien tempor pellentesque.</p>
+        @if (str_contains($project->process_description, '</p>'))
+            {!! $project->process_description !!}
+        @else
+            <p>{{$project->process_description}}</p>
+        @endif
+
     </div>
 
-    <div class="process-img"></div>
+    <div class="process-img">
+        @foreach ($process_images as $process_img)
+            <div class="process-slides fade">
+                <img src="{{asset($process_img->img_path)}}" alt="{{$project->name}}" >
+            </div>
+        @endforeach
+        <i class="fa-solid fa-chevron-left prev-btn"></i>
+        <i class="fa-solid fa-chevron-right next-btn"></i>
+    </div>
 
     <h2>Vind je dit een interessant project?</h2>
     <div class="project-main-btns">

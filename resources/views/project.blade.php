@@ -17,4 +17,5 @@
 
 @section('scripts')
     <script src="{{ asset('js/project.js') }}"></script>
+    <script src="{{ asset('js/slideshow.js') }}"></script>
 @endsection

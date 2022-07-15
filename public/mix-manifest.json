@@ -1,6 +1,7 @@
 {
     "/js/header.js": "/js/header.js",
     "/js/project.js": "/js/project.js",
+    "/js/slideshow.js": "/js/slideshow.js",
     "/css/app.css": "/css/app.css",
     "/css/project-page.css": "/css/project-page.css"
 }

@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ShowPdfController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,9 +22,11 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+Route::get('/', [HomeController::class, "showAllProjects"]);
 
 Route::get('/cv', [ShowPdfController::class, "downloadPdf"]);
 // Route::get('/cv', [ShowPdfController::class, "showPdf"]);
@@ -30,6 +34,8 @@ Route::get('/cv', [ShowPdfController::class, "downloadPdf"]);
 Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
 // Route::get('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
 
-Route::get('/project', function () {
-    return view('project');
-});
+// Route::get('/project', function () {
+//     return view('project');
+// });
+
+Route::get('/project/{project_name}', [ProjectController::class, "projectInfo"]);
