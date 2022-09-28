@@ -70,6 +70,78 @@ class ProjectSeeder extends Seeder
 
             ],
 
+            // ____________________ Art webshop ____________________
+            [
+                'name' => 'Webshop voor kunst materiaal',
+
+                'short_description' => 'Design van een webshop om kunst materiaal te kopen.',
+
+                'description' => '<p>Dit was een opdracht voor school, we kregen de opdracht om homepagina van een webshop te ontwerpen voor producten naar keuze. Ik ben een creatief persoon die in mijn vrije tijd graag tekent of schildert en ik dacht dat het een leuk idee kon zijn om hier een webshop rond te maken.</p>',
+
+                'process_description' => 'Ik heb eerst nagedacht welke informatie ik op de homepagina wou tonen en daarna ben ik begonnen met een aantal wireframes te maken. Tenslotte heb ik de wireframe gekozen die ik het best vond en heb ik dat design verder uitgewerkt in Adobe XD. De mockup van de app op de homepagina is gemaakt met behulp van photoshop.',
+
+                'category' => 'Design',
+
+                'url_website' => '',
+
+                'url_github' => '',
+
+                'url_design' => 'https://xd.adobe.com/view/d52c0c04-f6da-4b77-9d7e-b42389c17ea5-807f/',
+
+                'visible' => 1
+
+            ],
+
+            // ______________________ Portfolio ______________________
+
+            [
+                'name' => 'Portfolio',
+
+                'short_description' => 'Hier kunt u de code & het design van dit portfolio zien.',
+
+                'description' => '<p>Ik heb dit portfolio gemaakt om me te helpen bij mijn zoektocht naar een stageplaats zodat bedrijven mijn vaardigheden kunnen inschatten aan de hand van dit portfolio.</p>',
+
+                'process_description' => '<p>Ik heb eerst nagedacht over welke informatie er zeker op mijn portfolio moest komen en die dingen heb ik dan opgelijst. Dan ben ik begonnen met inspiratie te zoeken voor mijn design en wireframes ontwerpen. Daarna heb ik mijn wireframe verder uitgewerkt en kon ik over naar het developen van deze website. Ik heb deze website gemaakt met Laravel, Sql, javascript en Css. De mockups van de projecten heb ik gemaakt met photoshop.</p>
+
+                <p>Op de onderstaande screenshot\'s staat mijn to do lijst die ik doorheen het hele ontwikkelingsproces gebruikte en dat mij enorm hielp en een aantal screenshot\'s van mijn wireframe.</p>',
+
+                'category' => 'Design & development',
+
+                'url_website' => '',
+
+                'url_github' => 'https://github.com/IrisMaenhout/portfolio',
+
+                'url_design' => 'https://xd.adobe.com/view/f6a6a454-0fe7-4f00-8626-9669e841504d-a3f5/',
+
+                'visible' => 1
+
+            ],
+
+            // _______________________ Kiosk ____________________
+
+            [
+                'name' => 'Kiosk',
+
+                'short_description' => 'Dit was een opdracht voor school waarbij we een interface van een inschrijvingskiosk moesten ontwerpen die in de inkomhal van het ziekenhuis kan staan.',
+
+                'description' => 'Dit was een opdracht voor school waarbij we een interface van een inschrijvingskiosk moesten ontwerpen die in de inkomhal van het ziekenhuis kan staan. Deze kiosk verwelkomt je en bevat volgende onderdelen: indificatie met identiteitskaart, overzicht van de afspraak, bij wie & waar je moet zijn, het valideren van een parkeerkaart en het Downloaden van patiëntenstickers. Ik heb tijdens het ontwerpen van mijn design ook rekening gehouden met dat het bruikbaar moet zijn voor iedereen zoals bijvoorbeeld bejaarden, blinden, kleurenblinden, oudere mensen, anderstaligen, ...',
+
+                'process_description' => '<p>Ik ben eerst begonnen met wireframes te maken, het heeft eerst een tijdje geduurt voordat ik een goede layout had voor de interface omdat dit een ander formaat is dan ik gewoon ben om op te ontwerpen en omdat het de eerste keer was dat ik een interface voor een kiosk heb ontworpen. Toen ik tevreden was met mijn wireframe kon ik het verder uitwerken. We mochten de huisstijl van een bepaald ziekenhuis overnemen voor onze interface en ik koos voor UZ Gent omdat ik vond dat de hun huistijl het beste paste bij mijn interface.</p>
+
+                <p>In de onderstaande afbeeldingen kunt u een deel van mijn wireframe zien en een korte schets met hoe ik de kiosk zelf voor me zie als dit echt ontworpen moest worden.</p>',
+
+                'category' => 'Design',
+
+                'url_website' => '',
+
+                'url_github' => '',
+
+                'url_design' => 'https://xd.adobe.com/view/9143a9fb-0fe4-4627-b9d4-1c59e7dff3b7-c410/',
+
+                'visible' => 1
+
+            ],
+
 
             // [
             //     'name' => 'Smile!!',

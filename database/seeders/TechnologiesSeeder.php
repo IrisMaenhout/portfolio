@@ -67,6 +67,18 @@ class TechnologiesSeeder extends Seeder
             [
                 'name' => 'React'
             ],
+
+            [
+                'name' => 'Adobe XD'
+            ],
+
+            [
+                'name' => 'Adobe photoshop'
+            ],
+
+            [
+                'name' => 'Adobe illustrator'
+            ]
         ];
 
         foreach($technologies as $technology){

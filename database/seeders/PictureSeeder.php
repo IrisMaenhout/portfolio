@@ -111,6 +111,83 @@ class PictureSeeder extends Seeder
                 'img_path' => 'screencasts/babylist/babylist_2.mp4',
             ],
 
+            //  _____________________ Art webshop ______________________£
+
+            [
+                'project_id' => 3,
+                'img_path' => 'images/result/art_webshop/art_webshop_1.jpg',
+            ],
+            [
+                'project_id' => 3,
+                'img_path' => 'images/result/art_webshop/art_webshop_2.jpg',
+            ],
+            [
+                'project_id' => 3,
+                'img_path' => 'images/result/art_webshop/art_webshop_3.jpg',
+            ],
+            [
+                'project_id' => 3,
+                'img_path' => 'images/result/art_webshop/art_webshop_4.jpg',
+            ],
+            [
+                'project_id' => 3,
+                'img_path' => 'images/result/art_webshop/art_webshop_5.jpg',
+            ],
+            [
+                'project_id' => 3,
+                'img_path' => 'images/result/art_webshop/art_webshop_6.jpg',
+            ],
+            [
+                'project_id' => 3,
+                'img_path' => 'images/result/art_webshop/art_webshop_7.jpg',
+            ],
+
+            // _________________________ Portfolio ______________________
+
+            [
+                'project_id' => 4,
+                'img_path' => 'images/result/portfolio/portfolio_1.jpg',
+            ],
+            [
+                'project_id' => 4,
+                'img_path' => 'images/result/portfolio/portfolio_2.jpg',
+            ],
+            [
+                'project_id' => 4,
+                'img_path' => 'images/result/portfolio/portfolio_3.jpg',
+            ],
+
+            // ___________________ Kiosk ________________________
+            [
+                'project_id' => 5,
+                'img_path' => 'images/result/kiosk/kiosk_1.png',
+            ],
+            [
+                'project_id' => 5,
+                'img_path' => 'images/result/kiosk/kiosk_2.png',
+            ],
+            [
+                'project_id' => 5,
+                'img_path' => 'images/result/kiosk/kiosk_3.png',
+            ],
+            [
+                'project_id' => 5,
+                'img_path' => 'images/result/kiosk/kiosk_4.png',
+            ],
+            [
+                'project_id' => 5,
+                'img_path' => 'images/result/kiosk/kiosk_5.png',
+            ],
+            [
+                'project_id' => 5,
+                'img_path' => 'images/result/kiosk/kiosk_6.png',
+            ],
+            [
+                'project_id' => 5,
+                'img_path' => 'images/result/kiosk/kiosk_7.png',
+            ],
+
+
 
         ];
 
@@ -144,6 +221,53 @@ class PictureSeeder extends Seeder
                 'project_id' => 2,
                 'img_path' => 'images/process/babylist/babylist_2.jpg',
             ],
+
+            //  _____________________ Art webshop ______________________£
+
+            [
+                'project_id' => 3,
+                'img_path' => 'images/process/art_webshop/art_webshop_1.png',
+            ],
+            [
+                'project_id' => 3,
+                'img_path' => 'images/process/art_webshop/art_webshop_2.png',
+            ],
+
+            //________________________ Portfolio ______________________________
+
+            [
+                'project_id' => 4,
+                'img_path' => 'images/process/portfolio/portfolio_1.jpg',
+            ],
+            [
+                'project_id' => 4,
+                'img_path' => 'images/process/portfolio/portfolio_2.jpg',
+            ],
+            [
+                'project_id' => 4,
+                'img_path' => 'images/process/portfolio/portfolio_3.jpg',
+            ],
+            [
+                'project_id' => 4,
+                'img_path' => 'images/process/portfolio/portfolio_4.jpg',
+            ],
+
+            // _____________________________ Kiosk _________________________
+
+            [
+                'project_id' => 5,
+                'img_path' => 'images/process/kiosk/kiosk_1.jpg',
+            ],
+            [
+                'project_id' => 5,
+                'img_path' => 'images/process/kiosk/kiosk_2.jpg',
+            ],
+            [
+                'project_id' => 5,
+                'img_path' => 'images/process/kiosk/kiosk_3.jpg',
+            ],
+
+
 
         ];
 

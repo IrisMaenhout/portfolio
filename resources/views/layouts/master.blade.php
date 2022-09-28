@@ -50,7 +50,7 @@
             </ul>
 
             <ul class="icons">
-                <li><a href=""><i class="fa-brands fa-github-square"></i></a></li>
+                <li><a href="https://github.com/IrisMaenhout" target="_blank"><i class="fa-brands fa-github-square"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/iris-maenhout" target="_blank"><i
                             class="fa-brands fa-linkedin"></i></a></li>
             </ul>

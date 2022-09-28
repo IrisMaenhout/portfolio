@@ -64,6 +64,63 @@ class ProjectTechnologiesSeeder extends Seeder
                 'project_id' => 2
             ],
 
+            // _______________________ Art webshop _____________________________
+
+            [
+                'technology_id' => 14,
+                'project_id' => 3
+            ],
+            [
+                'technology_id' => 15,
+                'project_id' => 3
+            ],
+
+            // ______________________ Portfolio ________________________
+            [
+                'technology_id' => 1,
+                'project_id' => 4
+            ],
+            [
+                'technology_id' => 2,
+                'project_id' => 4
+            ],
+            [
+                'technology_id' => 3,
+                'project_id' => 4
+            ],
+            [
+                'technology_id' => 4,
+                'project_id' => 4
+            ],
+            [
+                'technology_id' => 5,
+                'project_id' => 4
+            ],
+            [
+                'technology_id' => 8,
+                'project_id' => 4
+            ],
+            [
+                'technology_id' => 14,
+                'project_id' => 4
+            ],
+            [
+                'technology_id' => 15,
+                'project_id' => 4
+            ],
+            [
+                'technology_id' => 8,
+                'project_id' => 4
+            ],
+
+            // _____________________ Kiosk __________________________
+
+            [
+                'technology_id' => 14,
+                'project_id' => 5
+            ],
+
+
         ];
 
 
